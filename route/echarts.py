@@ -28,10 +28,14 @@ def GetPie():
         diskUsed = 0    #已用
         diskFree = 0    #剩余
         for i in io:
-            o = psutil.disk_usage(i.mountpoint)
-            diskTotal += int(o.total/(1024.0*1024.0*1024.0))
-            diskUsed += int(o.used/(1024.0*1024.0*1024.0))
-            diskFree += int(o.free/(1024.0*1024.0*1024.0))
+            try:
+                #若windows下插入U盘,访问U盘磁盘时,会出现"设备未就绪的错误"
+                o = psutil.disk_usage(i.mountpoint)
+                diskTotal += int(o.total/(1024.0*1024.0*1024.0))
+                diskUsed += int(o.used/(1024.0*1024.0*1024.0))
+                diskFree += int(o.free/(1024.0*1024.0*1024.0))
+            except:
+                pass
         resJson = []
         resJson.append({
                 'ttl':'CPU状态',

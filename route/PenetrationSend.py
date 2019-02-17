@@ -13,9 +13,13 @@ def PenetrationSendFunc():
     diskTotal = 0
     diskUsed = 0
     for i in io:
-        o = psutil.disk_usage(i.mountpoint)
-        diskTotal += o.total
-        diskUsed += o.used
+        #windows下插入U盘,访问U盘时会出现"设备未就绪"
+        try:
+            o = psutil.disk_usage(i.mountpoint)
+            diskTotal += o.total
+            diskUsed += o.used
+        except:
+            pass
     response = make_response(json.dumps({
         'cpu':psutil.cpu_percent(0.5),
         'memory':round(m.used/m.total, 3),
