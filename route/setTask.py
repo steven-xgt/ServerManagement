@@ -1,6 +1,6 @@
 from flask import request,render_template,redirect,send_file, send_from_directory,url_for,session,make_response
 import time
-from index import app,url
+from run import app,url
 import json
 import os
 import time,random

@@ -1,4 +1,4 @@
-from index import app,sql,url
+from run import app,sql,url
 from flask import request,render_template
 import json
 from lib.writeRes import writeResTask

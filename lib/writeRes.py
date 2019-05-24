@@ -1,6 +1,6 @@
 import psutil
 import time
-from index import sql
+from run import sql
 from threading import Thread
 from config.config import ResState,ResSaveDay,ResInv
 class writeResTask(object):

@@ -53,7 +53,7 @@
 然后安装依赖库<br>
 `python3 -m pip install flask paramiko pillow datetime chardet pautil `<br>
 最后进入项目运行就行了<br>
-`python3 index.py`<br>
+`python3 run.py`<br>
 如果你是windows，记得还需要pip install pyautogui
 ## 本项目后端给前端传值全部使用json,前端用jq处理、发送请求并生成最终页面<br>
 ## 其中的文件管理器部分前端给后端传值,大部分采用base64编码 <br>

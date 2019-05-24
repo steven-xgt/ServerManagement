@@ -1,6 +1,6 @@
 import psutil
 from flask import request,render_template,redirect,send_file, send_from_directory,url_for,session,make_response
-from index import app
+from run import app
 import json
 import platform
 @app.route('/PenetrationSend',methods=['POST'])

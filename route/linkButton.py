@@ -1,6 +1,6 @@
 from flask import request,render_template,redirect,url_for,session
 import time
-from index import app,sql,url
+from run import app,sql,url
 import json
 import os
 import base64

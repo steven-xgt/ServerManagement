@@ -4,7 +4,7 @@ if 'WINDOWS' in platform.platform().upper():
     import time
     import math
     import json,subprocess
-    from index import app,url
+    from run import app,url
     from .login import cklogin
     from PIL import ImageGrab,Image
     import pyautogui

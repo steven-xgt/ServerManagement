@@ -1,5 +1,5 @@
 from flask import request,render_template,redirect,url_for,session,Response
-from index import app,url
+from run import app,url
 import base64,platform,os,time,json,subprocess
 from .login import cklogin
 SYSTEMDEB = None

@@ -1,4 +1,4 @@
-from index import app,sql
+from run import app,sql
 import json
 from functools import wraps
 from flask import request,render_template,redirect,url_for,session

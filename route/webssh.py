@@ -2,7 +2,7 @@ import paramiko
 import threading
 import time,random,json
 from flask import request,redirect,render_template
-from index import app,sql,url
+from run import app,sql,url
 from .login import cklogin
 url.append( {"title": "SHELL",
     "children": [

@@ -1,6 +1,11 @@
 .beg-login-bg {
 	background-color: #393D49;
+	/*background-image: url("../img/loginBackground.jpg");*/
 }
+/*
+body{
+	background-image: url("../img/loginBackground.jpg");
+}*/
 
 .beg-login-box {
 	width: 450px;

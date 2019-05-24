@@ -1,6 +1,6 @@
 import psutil
 from flask import request,render_template,redirect,send_file, send_from_directory,url_for,session,make_response
-from index import app,url
+from run import app,url
 import json
 import platform,os,datetime,sys
 from .login import cklogin
